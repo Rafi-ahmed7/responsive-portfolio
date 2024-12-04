@@ -235,10 +235,12 @@ footer input[type="text"] , input[type="email"], textarea{
 /* skill-container */
  @media screen and (max-width:576px)
   {
-    .skills-container, .about-items{
+    .skills-container, .about-items, 
+    .banner
+    {
         flex-direction: column;
     } 
-    .resume-container, footer{
+    .resume-container, footer, nav, nav > ul {
         flex-direction: column;
     }
 
@@ -251,6 +253,9 @@ footer input[type="text"] , input[type="email"], textarea{
     footer input[type="text"] , input[type="email"], textarea{
         width: calc((100% - 40px));
     }
+    .header{
+        background-image: none;
+    }
     .about{
         border-radius: 3px;
         -webkit-border-radius: 3px;
@@ -259,6 +264,19 @@ footer input[type="text"] , input[type="email"], textarea{
         -o-border-radius: 3px;
         padding:20px 20px ;
         margin-top: 30px;
+       
 }
+.banner{
+    margin: 20px;
+}
+.banner-profile{
+    width: 100%;
+}
+
+nav > ul {
+    gap: 20px;
+}
+.btn-primary{
+   margin-bottom: 20px;
     
  }
